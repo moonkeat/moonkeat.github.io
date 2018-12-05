@@ -1,0 +1,132 @@
+html,
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  color: white;
+  height: 200px;
+  z-index: 1;
+  width: 100%;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header #logo {
+  position: absolute;
+  vertical-align: top;
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  margin: 2px;
+}
+
+#logo:hover {
+  border: 4px solid white;
+  margin: 0px;
+}
+
+header .more {
+  margin-left: 57px;
+}
+
+header p {
+  font-size: 1.5em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+header p.subtitle {
+  font-size: 1.1em;
+}
+
+#hero {
+  color: white;
+
+  padding: 180px 0 240px;
+  position: relative;
+  background-image: url(../img/luca-bravo-210213-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  box-shadow: inset 0 0 0 2000px rgba(31, 31, 31, 0.6);
+}
+
+#hero h1 {
+  font-size: 3em;
+}
+
+#hero p {
+  line-height: 1.5em;
+}
+
+#credit-badge {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  text-decoration: none;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.experiences {
+  text-align: center;
+  padding: 300px 0;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 25px 0;
+  font-size: 0.75em;
+}
+
+footer .info {
+  display: inline-block;
+}
+
+footer .links {
+  float: right;
+}
+
+footer .links a {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  #hero {
+    padding: 100px 0 120px;
+  }
+}
