@@ -128,13 +128,13 @@ header p.subtitle {
 }
 
 #experiences,
-#skills,
-#academic {
+#skills {
   padding: 100px 0;
 }
 
 #experiences h1,
 #skills h1,
+#more-info h1,
 #academic h1 {
   text-align: center;
   text-transform: uppercase;
@@ -147,7 +147,8 @@ header p.subtitle {
   text-align: center;
 }
 
-#skills .box {
+#skills .box,
+#more-info .box {
   width: 33%;
   text-align: center;
   display: inline-block;
@@ -158,7 +159,8 @@ header p.subtitle {
 }
 
 
-#skills strong {
+#skills strong,
+#more-info strong {
   display: block;
   margin: 20px auto;
   text-transform: uppercase;
@@ -166,14 +168,24 @@ header p.subtitle {
   text-align: center;
 }
 
-#skills ul {
+#skills ul,
+#more-info ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-#skills li {
+#skills li,
+#more-info li {
   line-height: 25px;
+}
+
+#more-info {
+  padding: 50px 0;
+}
+
+#academic {
+  padding: 50px 0 100px;
 }
 
 #academic .container {
@@ -255,7 +267,8 @@ footer .links a {
     margin-top: 0;
   }
 
-  #skills .box {
+  #skills .box,
+  #more-info .box {
     width: 100%;
   }
 }
