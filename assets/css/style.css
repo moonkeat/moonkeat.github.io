@@ -98,9 +98,57 @@ header p.subtitle {
   z-index: 2;
 }
 
-.experiences {
+.experiences,
+.academic {
+  padding: 100px 0;
+}
+
+.experiences h1,
+.academic h1 {
   text-align: center;
-  padding: 300px 0;
+  text-transform: uppercase;
+  border-bottom: 4px solid #f6f6f6;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.experiences .info {
+  text-align: center;
+}
+
+.academic .container {
+  text-align: center;
+}
+
+.academic .year {
+  float: right;
+}
+
+.academic a {
+  text-decoration: none;
+}
+
+.academic .logo {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+.academic .info {
+  display: inline-block;
+  text-align: left;
+  margin-left: 10px;
+  line-height: 23px;
+}
+
+.academic .year {
+  color: #999999;
+}
+
+.academic .info h2 {
+  margin-bottom: 10px;
 }
 
 footer {
@@ -120,6 +168,7 @@ footer .links {
 
 footer .links a {
   color: white;
+  margin-left: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -129,5 +178,9 @@ footer .links a {
 
   #hero {
     padding: 100px 0 120px;
+  }
+
+  .academic .info {
+    margin-left: 0;
   }
 }
