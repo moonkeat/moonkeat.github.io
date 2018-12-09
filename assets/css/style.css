@@ -37,7 +37,7 @@ header #logo {
 
 #logo:hover {
   border: 4px solid white;
-  margin: 0px;
+  margin: 0;
 }
 
 header .more {
@@ -54,12 +54,12 @@ header p.subtitle {
   font-size: 1.1em;
 }
 
-#hero {
+#hero,
+#play {
   color: white;
+  cursor: default;
 
-  padding: 180px 0 240px;
   position: relative;
-  background-image: url(../img/luca-bravo-210213-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -74,6 +74,11 @@ header p.subtitle {
   box-shadow: inset 0 0 0 2000px rgba(31, 31, 31, 0.6);
 }
 
+#hero {
+  padding: 180px 0 240px;
+  background-image: url(../img/luca-bravo-210213-unsplash.jpg);
+}
+
 #hero h1 {
   font-size: 3em;
 }
@@ -82,7 +87,7 @@ header p.subtitle {
   line-height: 1.5em;
 }
 
-#credit-badge {
+.credit-badge {
   position: absolute;
   right: 5px;
   bottom: 5px;
@@ -98,13 +103,39 @@ header p.subtitle {
   z-index: 2;
 }
 
-.experiences,
-.academic {
+#play {
+  padding: 250px 0;
+  text-align: center;
+  background-position: top center;
+  background-image: url(../img/lweendo-hachileka-708536-unsplash.jpg);
+}
+
+#play .quote {
+  padding: 40px;
+  display: inline-block;
+  border: 4px solid white;
+}
+
+#play strong {
+  display: block;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 1.2em;
+}
+
+#play .play-hard {
+  font-size: 3.4em;
+}
+
+#experiences,
+#skills,
+#academic {
   padding: 100px 0;
 }
 
-.experiences h1,
-.academic h1 {
+#experiences h1,
+#skills h1,
+#academic h1 {
   text-align: center;
   text-transform: uppercase;
   border-bottom: 4px solid #f6f6f6;
@@ -112,23 +143,23 @@ header p.subtitle {
   margin-bottom: 20px;
 }
 
-.experiences .info {
+#experiences .info {
   text-align: center;
 }
 
-.academic .container {
+#academic .container {
   text-align: center;
 }
 
-.academic .year {
+#academic .year {
   float: right;
 }
 
-.academic a {
+#academic a {
   text-decoration: none;
 }
 
-.academic .logo {
+#academic .container .logo {
   width: 80px;
   height: 80px;
   display: inline-block;
@@ -136,18 +167,18 @@ header p.subtitle {
   margin-top: 20px;
 }
 
-.academic .info {
+#academic .info {
   display: inline-block;
   text-align: left;
   margin-left: 10px;
   line-height: 23px;
 }
 
-.academic .year {
+#academic .year {
   color: #999999;
 }
 
-.academic .info h2 {
+#academic .info h2 {
   margin-bottom: 10px;
 }
 
@@ -180,7 +211,11 @@ footer .links a {
     padding: 100px 0 120px;
   }
 
-  .academic .info {
+  #academic .info {
     margin-left: 0;
+  }
+
+  #academic .logo {
+    margin-top: 0;
   }
 }
