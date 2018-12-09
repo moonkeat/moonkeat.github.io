@@ -168,6 +168,7 @@ header p.subtitle {
   text-align: center;
 }
 
+#experiences ul,
 #skills ul,
 #more-info ul {
   margin: 0;
@@ -184,20 +185,41 @@ header p.subtitle {
   padding: 50px 0;
 }
 
+#experiences .info {
+  margin-bottom: 40px;
+}
+
 #academic {
   padding: 50px 0 100px;
 }
 
+#experiences {
+  padding-bottom: 0;
+}
+
+#experiences .container,
 #academic .container {
   text-align: center;
 }
 
+#experiences .year,
 #academic .year {
   float: right;
 }
 
+#experiences strong {
+  display: block;
+  text-transform: uppercase;
+}
+
+
+#experiences a,
 #academic a {
   text-decoration: none;
+}
+
+#experiences li {
+  margin: 201x 0 0 50px;
 }
 
 #academic .container .logo {
@@ -208,6 +230,14 @@ header p.subtitle {
   margin-top: 20px;
 }
 
+#experiences .container .logo {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+}
+
 #academic .info {
   display: inline-block;
   text-align: left;
@@ -215,12 +245,25 @@ header p.subtitle {
   line-height: 23px;
 }
 
+#experiences .info {
+  display: inline-block;
+  text-align: left;
+  margin-left: 40px;
+  line-height: 23px;
+  min-width: 400px;
+}
+
+#experiences .year,
 #academic .year {
   color: #999999;
 }
 
 #academic .info h2 {
   margin-bottom: 10px;
+}
+
+#experiences .info h2 {
+  margin-bottom: 5px;
 }
 
 footer {
@@ -248,6 +291,17 @@ footer .links a {
   #play {
     background-attachment: initial;
   }
+
+  #experiences img.logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+
+  #experiences .info {
+    display: block;
+    min-width: auto;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -264,6 +318,18 @@ footer .links a {
   }
 
   #academic .logo {
+    margin-top: 0;
+  }
+
+  #experiences li {
+    margin: 10px 0 50px;
+  }
+
+  #experiences .info {
+    margin-left: 10px;
+  }
+
+  #experiences .logo {
     margin-top: 0;
   }
 
