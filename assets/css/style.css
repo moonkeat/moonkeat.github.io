@@ -147,6 +147,35 @@ header p.subtitle {
   text-align: center;
 }
 
+#skills .box {
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  cursor: default;
+  vertical-align: top;
+}
+
+
+#skills strong {
+  display: block;
+  margin: 20px auto;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+#skills ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#skills li {
+  line-height: 25px;
+}
+
 #academic .container {
   text-align: center;
 }
@@ -224,5 +253,9 @@ footer .links a {
 
   #academic .logo {
     margin-top: 0;
+  }
+
+  #skills .box {
+    width: 100%;
   }
 }
