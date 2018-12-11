@@ -140,10 +140,6 @@ header p.subtitle {
   margin-bottom: 20px;
 }
 
-#experiences .info {
-  text-align: center;
-}
-
 #skills .box,
 #more-info .box {
   width: 33%;
@@ -184,8 +180,38 @@ header p.subtitle {
   padding: 50px 0;
 }
 
+#experiences li {
+  clear: both;
+}
+
+#experiences li > a {
+  float: left;
+}
+
+#experiences ul li {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 #experiences .info {
-  margin-bottom: 40px;
+  float: right;
+  text-align: left;
+  line-height: 23px;
+  min-width: 400px;
+  margin-bottom: 10px;
+}
+
+#experiences .desc {
+  clear: both;
+  list-style: circle;
+  text-align: left;
+  line-height: 22px;
+  margin: 0 0 20px 30px;
+  max-width: 480px;
+}
+
+#experiences .desc li {
+  margin-bottom: 5px;
 }
 
 #experiences .container,
@@ -209,10 +235,6 @@ header p.subtitle {
   text-decoration: none;
 }
 
-#experiences li {
-  margin: 201x 0 0 50px;
-}
-
 #academic .container .logo {
   width: 80px;
   height: 80px;
@@ -234,14 +256,6 @@ header p.subtitle {
   text-align: left;
   margin-left: 10px;
   line-height: 23px;
-}
-
-#experiences .info {
-  display: inline-block;
-  text-align: left;
-  margin-left: 40px;
-  line-height: 23px;
-  min-width: 400px;
 }
 
 #experiences .year,
