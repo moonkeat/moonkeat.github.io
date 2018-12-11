@@ -75,6 +75,7 @@ header p.subtitle {
 }
 
 #hero {
+  margin-bottom: 50px;
   padding: 180px 0 240px;
   background-image: url(../img/luca-bravo-210213-unsplash.jpg);
 }
@@ -104,6 +105,7 @@ header p.subtitle {
 }
 
 #play {
+  margin: 50px 0;
   padding: 250px 0;
   text-align: center;
   background-position: top center;
@@ -125,11 +127,6 @@ header p.subtitle {
 
 #play .play-hard {
   font-size: 3.4em;
-}
-
-#experiences,
-#skills {
-  padding: 100px 0;
 }
 
 #experiences h1,
@@ -181,20 +178,14 @@ header p.subtitle {
   line-height: 25px;
 }
 
+#academic,
+#experiences,
 #more-info {
   padding: 50px 0;
 }
 
 #experiences .info {
   margin-bottom: 40px;
-}
-
-#academic {
-  padding: 50px 0 100px;
-}
-
-#experiences {
-  padding-bottom: 0;
 }
 
 #experiences .container,
@@ -271,6 +262,7 @@ footer {
   color: white;
   padding: 25px 0;
   font-size: 0.75em;
+  margin-top: 50px;
 }
 
 footer .info {
@@ -291,6 +283,20 @@ footer .links a {
   #play {
     background-attachment: initial;
   }
+
+  #hero {
+    margin-bottom: 0;
+  }
+
+  #play {
+    margin-bottom: 0;
+  }
+
+  #academic,
+  #more-info {
+    padding-bottom: 0;
+  }
+
 
   #experiences img.logo {
     width: 100px;
