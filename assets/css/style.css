@@ -311,16 +311,24 @@ footer .links a {
     padding-bottom: 0;
   }
 
+  #experiences li > a {
+    float: none;
+    display: inline-block;
+  }
 
-  #experiences img.logo {
-    width: 100px;
-    height: 100px;
+  #experiences .container .logo {
+    width: 60px;
+    height: 60px;
+    float: none;
     display: block;
+    text-align: center;
+    margin-top: 30px;
   }
 
   #experiences .info {
-    display: block;
     min-width: auto;
+    display: block;
+    float: none;
   }
 }
 
